@@ -30,7 +30,8 @@ class GameCenterGetScoreViewModel: ObservableObject {
                         GKLeaderboard.loadLeaderboards(IDs: [leaderboarderId]) { (boards, _) in
                             boards?.first?.loadEntries(for: .global, timeScope: .allTime, range: NSRange(location: 1, length: 1), completionHandler: {(local, entries, _, _) in
                                 // If entries are loaded, set the value to worldHighScore
-                                if let entries = entries {
+                                if let entries = entries,
+                                   entries.isEmpty == false {
                                     self.worldHighScore = entries[0].score
                                 }
                                 // If local is loaded, set the value to yourHighScore
