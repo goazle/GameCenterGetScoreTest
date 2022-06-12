@@ -9,7 +9,12 @@ import GameKit
 
 struct GameCenterHelper {
 
-    static func loginGameCenter() {
+    static let shared = GameCenterHelper()
+
+    private init() {
+    }
+
+    func loginGameCenter() {
         GKLocalPlayer.local.authenticateHandler = { _, error in
             if error != nil {
                 print("You are not logged into GameCenter.")

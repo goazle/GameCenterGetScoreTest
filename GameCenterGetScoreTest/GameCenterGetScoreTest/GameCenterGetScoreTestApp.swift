@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window.rootViewController = UIViewController()
         if let _ = window.rootViewController {
             print("GameCenterのログイン処理を呼び出します")
-            GameCenterHelper.loginGameCenter()
+            GameCenterHelper.shared.loginGameCenter()
         }
         return true
     }

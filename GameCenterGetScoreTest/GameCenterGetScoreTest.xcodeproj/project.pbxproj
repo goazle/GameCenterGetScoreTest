@@ -13,6 +13,7 @@
 		F36FA6B3284733FF007B2A99 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F36FA6B2284733FF007B2A99 /* Preview Assets.xcassets */; };
 		F3787E2C28479C5400AAE72B /* GameCenterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3787E2B28479C5400AAE72B /* GameCenterHelper.swift */; };
 		F3787E2E2848F26B00AAE72B /* GameCenterGetScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3787E2D2848F26B00AAE72B /* GameCenterGetScoreViewModel.swift */; };
+		F3C1835928557BFE0023901C /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C1835828557BFE0023901C /* Score.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		F36FA6B2284733FF007B2A99 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F3787E2B28479C5400AAE72B /* GameCenterHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterHelper.swift; sourceTree = "<group>"; };
 		F3787E2D2848F26B00AAE72B /* GameCenterGetScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterGetScoreViewModel.swift; sourceTree = "<group>"; };
+		F3C1835828557BFE0023901C /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +59,9 @@
 			children = (
 				F36FA6AB284733FE007B2A99 /* GameCenterGetScoreTestApp.swift */,
 				F3787E2B28479C5400AAE72B /* GameCenterHelper.swift */,
-				F36FA6AD284733FE007B2A99 /* GameCenterGetScoreView.swift */,
-				F3787E2D2848F26B00AAE72B /* GameCenterGetScoreViewModel.swift */,
+				F3C1835528557BCB0023901C /* View */,
+				F3C1835628557BE10023901C /* ViewModel */,
+				F3C1835728557BEB0023901C /* Model */,
 				F36FA6AF284733FF007B2A99 /* Assets.xcassets */,
 				F36FA6B1284733FF007B2A99 /* Preview Content */,
 			);
@@ -71,6 +74,30 @@
 				F36FA6B2284733FF007B2A99 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F3C1835528557BCB0023901C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F36FA6AD284733FE007B2A99 /* GameCenterGetScoreView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3C1835628557BE10023901C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F3787E2D2848F26B00AAE72B /* GameCenterGetScoreViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F3C1835728557BEB0023901C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F3C1835828557BFE0023901C /* Score.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +195,7 @@
 				F3787E2E2848F26B00AAE72B /* GameCenterGetScoreViewModel.swift in Sources */,
 				F36FA6AC284733FE007B2A99 /* GameCenterGetScoreTestApp.swift in Sources */,
 				F3787E2C28479C5400AAE72B /* GameCenterHelper.swift in Sources */,
+				F3C1835928557BFE0023901C /* Score.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
