@@ -22,6 +22,13 @@ struct GameCenterGetScoreView: View {
             .border(.blue, width: 1.0)
 
             VStack {
+                Text("When the application status becomes active, the latest scores are automatically loaded.").font(.caption)
+                Text("WorldScore : \(viewModel.autoLoadScore2.worldScore)")
+                Text("myScore : \(viewModel.autoLoadScore2.yourScore)")
+            }.padding()
+            .border(.blue, width: 1.0)
+
+            VStack {
                 Text("Tap the button to load the latest score if you are already logged in to GameCenter.").font(.caption)
                 Button {
                     viewModel.buttonTapped()
